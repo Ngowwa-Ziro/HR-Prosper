@@ -342,7 +342,7 @@
        /* Newsletter Section */
         .newsletter-section {
             position: absolute;
-            top: -95px;       /* moves it upward so it overlaps the footer */
+            top: -95px;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
@@ -350,17 +350,31 @@
 
 
         .newsletter-container {
-            width: 900px;      /* ✅ narrower */
-            height: 160px;     /* ✅ shorter */
+            width: 900px;
+            height: 160px;
             background: white;
             border-radius: 5px;
             box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.15);
             margin: 0 auto;
-            padding: 28px 60px; /* adjust padding to keep text aligned */
+            padding: 28px 60px;
             position: relative;
             z-index: 2;
         }
 
+        form.newsletter-form {
+            display: flex !important;
+            flex-direction: row !important;  /* keep input and button side-by-side */
+            flex-wrap: nowrap !important;    /* prevent wrapping to next line */
+            align-items: center !important;  /* vertical center alignment */
+            justify-content: center !important;
+        }
+
+        .newsletter-button {
+            flex-shrink: 0;
+            display: inline-block;
+            width: 291px;
+            height: 44px;
+        }
 
         .newsletter-title {
             font-family: 'Montserrat', sans-serif;

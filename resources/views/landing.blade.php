@@ -707,8 +707,6 @@
             transition: transform 0.3s;
         }
 
-
-
         .blog-cta:hover {
             transform: scale(1.05);
         }
@@ -730,6 +728,7 @@
             font-weight: 600;
             font-size: 16px;
             color: white;
+            white-space: nowrap;
         }
 
         .blog-cta-arrow {
@@ -744,6 +743,16 @@
             font-weight: bold;
         }
 
+        .blog-cta-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            padding: 0 12px;
+        }
 
 
 
@@ -1189,8 +1198,10 @@
                             <h3 class="blog-category">Recruitment</h3>
                         </div>
                         <div class="blog-cta">
-                            <span class="blog-cta-text">Read More</span>
-                            <span class="blog-cta-arrow"></span>
+                            <a href="/" target="_blank" class="blog-cta-link">
+                                <span class="blog-cta-text">Read More</span>
+                                <span class="blog-cta-arrow"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="blog-card">
@@ -1199,7 +1210,7 @@
                             <h3 class="blog-category">Training</h3>
                         </div>
                         <div class="blog-cta">
-                            <a href="{{ asset('files/Training.pdf') }}" target="_blank" class="blog-cta">
+                            <a href="{{ asset('files/Training.pdf') }}" target="_blank" class="blog-cta-link">
                                 <span class="blog-cta-text">Read More</span>
                                 <span class="blog-cta-arrow"></span>
                             </a>
@@ -1211,8 +1222,10 @@
                             <h3 class="blog-category">Employee Relations</h3>
                         </div>
                         <div class="blog-cta">
-                            <span class="blog-cta-text">Read More</span>
-                            <span class="blog-cta-arrow"></span>
+                            <a href="/" target="_blank" class="blog-cta-link">
+                                <span class="blog-cta-text">Read More</span>
+                                <span class="blog-cta-arrow"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
